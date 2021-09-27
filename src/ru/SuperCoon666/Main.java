@@ -79,8 +79,8 @@ public class Main
 
         for (int i = 0; i < id_streams.size(); i++) // поочерёдно проверяем каждую ссылку
         {
-            boolean res = query_date(preset+id_streams.get(i)); // вызываем функцию-обработчик
-            out.println(res); // выводим результат проверки ссылки с индексом i
+            boolean res = query_date(preset+id_streams.get(i)) ; // вызываем функцию-обработчик
+            out.println(i+1 + ". " + id_streams.get(i) + " : " + res); // выводим результат проверки ссылки с индексом i
         }
     }
 }
